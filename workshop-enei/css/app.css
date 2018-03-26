@@ -1,0 +1,255 @@
+/* This file is for your main application css. */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800');
+
+body {
+  background-color: #f5f7fa;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px 0 rgba(205, 212, 217, 0.65);
+  height: 70px;
+}
+
+.navbar .logo img {
+  height: 35px;
+}
+
+.navbar .github-login {
+  align-items: center;
+  background-color: #282636;
+  border-radius: 4px;
+  color: #ffffff;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 12px;
+}
+
+.navbar .github-login:hover {
+  text-decoration: none;
+}
+
+.navbar .github-login img {
+  margin-right: 15px;
+}
+
+.navbar .user-dropdown a.dropdown-toggle, .navbar .events-dropdown a.dropdown-toggle {
+  color: #282636;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+  text-decoration: none;
+}
+
+.navbar .user-dropdown a img {
+  border-radius: 100%;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.navbar .user-dropdown .dropdown-menu, .navbar .events-dropdown .dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 20px 0 rgba(40, 38, 54, 0.25);
+  padding: 0;
+}
+
+.navbar .user-dropdown .dropdown-menu a, .navbar .events-dropdown .dropdown-menu a {
+  color: #282636;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  padding: 14px 22px;
+}
+
+.navbar .user-dropdown .dropdown-menu a, .navbar .events-dropdown .dropdown-menu a:active {
+  background-color: #f8f9fa;
+}
+
+.navbar .user-dropdown .dropdown-menu a, .navbar .events-dropdown .dropdown-menu a:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.navbar .user-dropdown .dropdown-menu a, .navbar .events-dropdown .dropdown-menu a:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.navbar .events-dropdown .dropdown-menu a.dropdown-item.all-events {
+  background-color: #fafafa;
+}
+
+.navbar .events-dropdown .dropdown-menu a.dropdown-item.new-event {
+  background-color: #4786ff;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.navbar .events-dropdown .dropdown-menu a.dropdown-item.new-event img {
+  margin-right: 5px;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto 0px auto;
+  max-width: 450px;
+}
+
+.landing img.logo {
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.landing p {
+  color: #282636;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.landing-sample {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.landing-sample img {
+  margin: 0 auto;
+  max-width: 883px;
+}
+
+.card.new-event {
+  border: solid 1px #d4d5dd;
+  border-radius: 6px;
+  margin: 150px auto 0px auto;
+  max-width: 858px;
+  padding: 46px 46px 20px 46px;
+}
+
+.card.new-event .card-title {
+  color: #282636;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.card.new-event .form-actions {
+  margin-top: 40px;
+}
+
+.form-group label {
+  font-weight: 700;
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 800;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 60px;
+}
+
+.btn.btn-sm {
+  font-size: .875rem;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 30px;
+}
+
+.btn.btn-primary {
+  background-color: #4786ff;
+}
+
+.btn.btn-light {
+  background-color: rgba(131, 149, 183, 0.5);
+  color: #ffffff;
+}
+
+h1.title {
+  color: #282636;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2.subtitle {
+  color: #7b7d86;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+table.table {
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+
+table.table th {
+  border: none;
+  color: #7b7d86;
+  font-weight: 700;
+}
+
+table.table td {
+  border: none;
+  padding: 0px;
+}
+
+table.table tbody tr td:first-child div {
+  border-left: solid 1px #dfe0e8;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+table.table tbody tr td:last-child div {
+  border-right: solid 1px #dfe0e8;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+table.table tbody tr td div {
+  background-color: #ffffff;
+  border: solid 1px #dfe0e8;
+  border-left: none;
+  border-right: none;
+  font-weight: 600;
+  padding: 17px;
+  min-height: 60px;
+}
+
+table.table tbody tr td div.custom-checkbox {
+  border: none;
+  padding: 0px;
+  min-height: unset;
+}
+
+table.table tbody td div.entry-user {
+  padding: 9px 17px;
+}
+
+table.table tbody td div.entry-user img.entry-user-avatar, .online-user img {
+  border-radius: 100%;
+  height: 40px;
+  margin-right: 20px;
+}
+
+h3.online-users-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #282636;
+}
+
+div.online-user {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+div.online-user:last-child {
+  margin-bottom: 0px;
+}
+
+.pointer {
+  cursor: pointer;
+}

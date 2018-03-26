@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <h1 class="title mb-5">Listing Events</h1>
+
+  <div class="float-right">
+    <%= link "New Event", to: event_path(@conn, :new), class: "btn btn-primary" %>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= for event <- @events do %>
+          <tr>
+            <td>
+              <div><%= link event.name, to: event_path(@conn, :show, event) %></div>
+            </td>
+            <td>
+              <div><%= event.location %></div>
+            </td>
+
+            <td class="text-right">
+              <div>
+                <%= if get_authenticated_user(@conn).id == event.user_id do %>
+                  <%= link "Edit", to: event_path(@conn, :edit, event), class: "mr-3" %>
+                  <%= link "Delete", to: event_path(@conn, :delete, event), method: :delete, data: [confirm: "Are you sure?"] %>
+                <% end %>
+              </div>
+            </td>
+          </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

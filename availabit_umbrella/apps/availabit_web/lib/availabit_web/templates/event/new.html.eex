@@ -1,0 +1,7 @@
+<div class="card new-event">
+  <div class="card-body">
+    <h5 class="card-title">New Event</h5>
+
+    <%= render "form.html", Map.put(assigns, :action, event_path(@conn, :create)) %>
+  </div>
+</div>
